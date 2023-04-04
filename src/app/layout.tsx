@@ -1,8 +1,6 @@
 import { type ReactNode } from 'react'
-import Head from 'next/head'
 
 import '~/styles/globals.css'
-import { api } from '~/utils/api'
 
 export function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -13,7 +11,7 @@ export function RootLayout({ children }: { children: ReactNode }) {
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body>
-        <div className="h-screen w-screen">{children}</div>
+        <div className="h-screen w-screen bg-gray-100">{children}</div>
       </body>
     </html>
   )
