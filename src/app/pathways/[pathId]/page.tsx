@@ -1,4 +1,4 @@
-import Flow from '../Flow'
+import Flow from '../components/Flow'
 
 export type PageProps = {
   params?: { pathId: string }
@@ -6,9 +6,6 @@ export type PageProps = {
 
 export default function Page({ params }: PageProps) {
   console.log(params)
-  return (
-    <div className="flex h-screen w-full flex-col">
-      <Flow />
-    </div>
-  )
+
+  return <Flow />
 }

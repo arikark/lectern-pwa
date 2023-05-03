@@ -24,11 +24,9 @@ export default function Page({ params }: PageProps) {
 
   return (
     <div className="flex h-screen w-full flex-col">
-      hi
       <div>{title}</div>
       <div>{text}</div>
       <div>{url}</div>
-      {/* <Flow /> */}
     </div>
   )
 }
